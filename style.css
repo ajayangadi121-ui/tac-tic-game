@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: rgb(100, 19, 100);
+    color: white;
+    height: 72px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+    font-family: 'roboto',sans-serif;
+}
+nav ul{
+    list-style: none;
+}
+.gamecontainer{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    color: black;
+    height: 350px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: 'robot',sans-serif;
+}
+.container div{
+    border: 2px solid white;
+    font-size: 4vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(225, 150,252);
+}
+.info{
+    font-size: 25px;
+}
+.gameinfo{
+    padding: 0 34px;
+    font-family: 'baloo bhaina 2',cursive;
+}
+.imgbox img{
+    width: 0;
+    transition: width 2s ease-in-out;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+    border-top:0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+} 
+ #reset{
+    margin: 0;
+    padding: 6px;
+    background-color: #ffcfff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'baloo bhaina 2';
+    font-size: 15px;
+    font-weight: bolder;
+ }
+
+ @media screen and (max-width:950px) {
+  #gamecontainer{
+    flex-wrap: wrap;
+  }
+  .gameinfo{
+    margin-top:34px;
+  }
+.gemeInfo h1{
+    font-size: 1.5rem;
+}
+}
